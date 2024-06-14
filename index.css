@@ -1,0 +1,241 @@
+body{
+    background-color:black;
+    color: white;
+}
+
+.background, .background2 {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('bg.png');
+    background-size: cover;
+    animation: scrollUp 40s linear infinite;
+}
+
+.background2{
+    top: 100%;
+}
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 500px 150px 100px 100px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+nav > :nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.info{
+    margin-top: 100px;
+    display: grid;
+    gap: -50px;
+    grid-template-columns: 350px 100px 100px;
+    margin-left: 280px
+}
+
+.stand{
+    margin-top: -10px;
+    height: 280px;
+    padding: 3px;
+    background-color: white;
+}
+
+.square{
+    padding: 3px;
+    background-color: white;
+    display: inline-block;
+    margin-top: -30px;
+    margin-left: 120px;
+    height: 280px;
+    width: 250px;
+}
+
+.projecttxt{
+    display: grid;
+    grid-template-columns: 250px 120px 50px;
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+.photos{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 400px 400px;
+    margin-left: 20%;
+    margin-top: 2%;
+    transition: all 1s;
+}
+
+
+.project{
+    height: 200px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+
+.project:hover{
+    cursor: pointer;
+    border-radius: 0px !important;
+}
+
+.landpage{
+    rotate: 8deg;
+    transition: all 1s;
+}
+
+.landpage:hover{
+    rotate: 0deg;
+}
+
+.chess{
+    rotate: 8deg;
+    transition: all 1s;
+}
+
+.chess:hover{
+    rotate: 0deg;
+}
+
+.ecom{
+    rotate: -8deg;
+    margin-top: 40px;
+    transition: all 1s;
+}
+
+.ecom:hover{
+    rotate: 0deg;
+}
+
+.dashboard{
+    rotate: 8deg;
+    rotate: 13deg;
+    margin-left: -15px;
+    margin-top: 40px;
+    transition: all 1s;
+}
+
+.dashboard:hover{
+    rotate: 0deg;
+}
+
+
+/**didnt use vibration**/
+@keyframes vibrate{
+    0%{
+        transform: rotate(8deg);
+    }
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(8deg);
+    }
+}
+
+
+.spaceman1{
+    position: absolute;
+    transform: translateX(-50%);
+    animation: fly 3s ease-in-out infinite;
+}
+
+@keyframes fly{
+    0% {
+        transform: translate(-30%, 0);
+    }
+
+    50% {
+        transform: translate(-30%, -60px);
+    }
+
+    100% {
+        transform: translate(-30%, 0);
+    }
+}
+
+.moon{
+    display: inline-block;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.rocket{
+    margin-left: 1030px;
+    margin-top: 50px;
+    animation: sidefly 2s infinite;
+}
+
+@keyframes sidefly{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 100%;
+        left: 100%;
+        transform: translate(-100%,-100%);
+    }
+}
+
+
+.designe{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    margin-left: 350px;
+    margin-top: 70px;
+}
+
+.develop{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    margin-left: 350px;
+    margin-top: 70px;
+}
+
+.social{
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.spaceman3{
+    animation: fly 3s ease-in-out infinite;
+    margin-left: 100px;
+    height: 200px;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 10px 200px;
+    margin-left: 370px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
