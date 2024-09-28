@@ -216,7 +216,7 @@ nav > :nth-child(n+2) {
 .develop{
     display: grid;
     grid-template-columns: repeat(4,200px);
-    margin-left: 300px;
+    margin-left: 280px;
     margin-top: 70px;
 }
 
